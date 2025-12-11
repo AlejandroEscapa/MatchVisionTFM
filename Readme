@@ -5,11 +5,21 @@
 <h1 align="center">⚽ MatchVision</h1>
 
 <p align="center">
-  <a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-5.8-orange" alt="Swift 5.8"></a>
-  <a href="https://developer.apple.com/ios/"><img src="https://img.shields.io/badge/iOS-17.0-blue" alt="iOS 17"></a>
-  <a href="https://firebase.google.com/"><img src="https://img.shields.io/badge/Firebase-Auth%20%26%20Firestore-yellow" alt="Firebase"></a>
-  <a href="https://www.api-football.com/"><img src="https://img.shields.io/badge/API-Football-lightgrey" alt="API-Football"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green" alt="MIT License"></a>
+  <a href="https://swift.org">
+    <img src="https://img.shields.io/badge/Swift-5.8-orange" alt="Swift 5.8">
+  </a>
+  <a href="https://developer.apple.com/ios/">
+    <img src="https://img.shields.io/badge/iOS-17.0-blue" alt="iOS 17">
+  </a>
+  <a href="https://firebase.google.com/">
+    <img src="https://img.shields.io/badge/Firebase-Auth%20%26%20Firestore-yellow" alt="Firebase">
+  </a>
+  <a href="https://www.api-football.com/">
+    <img src="https://img.shields.io/badge/API-Football-lightgrey" alt="API Football">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-green" alt="MIT License">
+  </a>
 </p>
 
 ---
@@ -64,5 +74,3 @@ La app está completamente adaptada a un **ThemeManager dinámico**, utiliza **F
   - `AsyncImage` para carga de imágenes remotas  
   - Pull-to-refresh con `ScrollView` y `LazyVStack`  
   - Animaciones con `.transition`, `.spring` y `.easeIn`  
-
----
