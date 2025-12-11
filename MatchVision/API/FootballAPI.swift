@@ -20,7 +20,7 @@ struct APIService {
         1, 4, 5               // Competiciones de selecciones
     ]
     
-    private let apiKey = "fc300c641565a6a8c1f6ead1dabc35aa" // Clave API
+    private let apiKey = "" // Clave API
     private let baseURL = "https://v3.football.api-sports.io" // URL base de la API
     
     // MARK: - Ligas
