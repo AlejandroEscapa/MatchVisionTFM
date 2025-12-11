@@ -13,7 +13,7 @@ import Foundation
 final class APINews {
 
     // MARK: - Constantes
-    private let apiKey = "860f15b681614860b332dc2f3cac8f02" // Clave de la API de noticias
+    private let apiKey = "" // Clave de la API de noticias
     private let baseURL = "https://newsapi.org/v2/top-headlines" // URL base
     
     private enum Localized {
