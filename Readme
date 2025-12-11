@@ -43,7 +43,7 @@ La app está completamente adaptada a un ThemeManager dinámico, utiliza Firebas
 - Backend / Base de datos: Firebase Auth & Firestore  
 - API: [API-Football](https://www.api-football.com/)  
 - Arquitectura: MVVM (`StateObject`, `ObservableObject`)  
-- Almacenamiento local opcional:** CoreData (`PersistenceController`)  
+- Almacenamiento local opcional: CoreData (`PersistenceController`)  
 - Componentes auxiliares:
   - `AsyncImage` para carga de imágenes remotas  
   - Pull-to-refresh con `ScrollView` y `LazyVStack`  
