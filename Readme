@@ -1,10 +1,18 @@
-# ⚽ MatchVision
+<p align="center">
+  <img src="https://img.icons8.com/fluency/96/soccer-ball.png" alt="MatchVision Logo"/>
+</p>
 
-[![Swift](https://img.shields.io/badge/Swift-5.8-orange)](https://swift.org)  
-[![iOS](https://img.shields.io/badge/iOS-17.0-blue)](https://developer.apple.com/ios/)  
-[![Firebase](https://img.shields.io/badge/Firebase-Auth%20%26%20Firestore-yellow)](https://firebase.google.com/)  
-[![API-Football](https://img.shields.io/badge/API-Football-lightgrey)](https://www.api-football.com/)  
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)  
+<h1 align="center">⚽ MatchVision</h1>
+
+<p align="center">
+  <a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-5.8-orange" alt="Swift 5.8"></a>
+  <a href="https://developer.apple.com/ios/"><img src="https://img.shields.io/badge/iOS-17.0-blue" alt="iOS 17"></a>
+  <a href="https://firebase.google.com/"><img src="https://img.shields.io/badge/Firebase-Auth%20%26%20Firestore-yellow" alt="Firebase"></a>
+  <a href="https://www.api-football.com/"><img src="https://img.shields.io/badge/API-Football-lightgrey" alt="API-Football"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green" alt="MIT License"></a>
+</p>
+
+---
 
 **MatchVision** es una aplicación iOS desarrollada en **SwiftUI** para seguir equipos y jugadores de fútbol, consultar estadísticas, próximos partidos y gestionar favoritos.  
 
@@ -15,33 +23,33 @@ La app está completamente adaptada a un **ThemeManager dinámico**, utiliza **F
 ## 📌 Características principales
 
 ### 🔐 Autenticación de usuario
-- Registro y login con email y contraseña.  
-- Perfil de usuario con nombre, email y equipo favorito.  
-- Cierre de sesión seguro y persistencia de usuario.  
+- ✅ Registro y login con email y contraseña  
+- ✅ Perfil de usuario con nombre, email y equipo favorito  
+- ✅ Cierre de sesión seguro y persistencia de usuario  
 
 ### ⚽ Equipos y jugadores
-- Detalles de equipos con estadísticas, posición en la liga y puntos.  
-- Plantilla completa de jugadores con navegación a su detalle individual.  
-- Comparación de goles a favor y en contra por partido.  
-- Favoritos por usuario y sincronización en Firestore.  
+- 📊 Detalles de equipos con estadísticas, posición en la liga y puntos  
+- 👥 Plantilla completa de jugadores con navegación a su detalle individual  
+- ⚡ Comparación de goles a favor y en contra por partido  
+- ⭐ Favoritos por usuario y sincronización en Firestore  
 
 ### 📅 Próximos partidos
-- Visualización de próximos partidos de un equipo.  
-- Estado del partido (programado, en curso, finalizado).  
-- Resultados en tiempo real y pull-to-refresh.  
-- Iconos y logos de equipos cargados dinámicamente desde URLs.  
+- 📌 Visualización de próximos partidos de un equipo  
+- ⏱ Estado del partido (programado, en curso, finalizado)  
+- 🔄 Resultados en tiempo real y pull-to-refresh  
+- 🖼 Iconos y logos de equipos cargados dinámicamente desde URLs  
 
 ### 🎨 UI dinámica y temática
-- Dark/Light mode controlado por `ThemeManager`.  
-- Componentes reutilizables con colores, fondos y animaciones adaptativas.  
-- Splash y Welcome View animadas con transición de logo.  
-- TabBar y NavigationBar personalizados según el tema actual.  
+- 🌙 Dark/Light mode controlado por `ThemeManager`  
+- 🔹 Componentes reutilizables con colores, fondos y animaciones adaptativas  
+- ✨ Splash y Welcome View animadas con transición de logo  
+- 🧭 TabBar y NavigationBar personalizados según el tema actual  
 
 ### 🌐 API y servicios
-- Consumo de **API-Football** con autenticación mediante API Key.  
-- Fetch de ligas principales, equipos, jugadores y partidos.  
-- Manejo de errores y estados de carga en tiempo real.  
-- Cache de imágenes y datos básicos para mejorar la experiencia.  
+- 🌐 Consumo de **API-Football** con autenticación mediante API Key  
+- 📥 Fetch de ligas principales, equipos, jugadores y partidos  
+- ⚠️ Manejo de errores y estados de carga en tiempo real  
+- 💾 Cache de imágenes y datos básicos para mejorar la experiencia  
 
 ---
 
@@ -50,7 +58,7 @@ La app está completamente adaptada a un **ThemeManager dinámico**, utiliza **F
 - **Lenguaje:** Swift 5.8+, SwiftUI  
 - **Backend / Base de datos:** Firebase Auth & Firestore  
 - **API:** [API-Football](https://www.api-football.com/)  
-- **Gestión de estado y arquitectura:** MVVM (`StateObject`, `ObservableObject`)  
+- **Arquitectura:** MVVM (`StateObject`, `ObservableObject`)  
 - **Almacenamiento local opcional:** CoreData (`PersistenceController`)  
 - **Componentes auxiliares:**  
   - `AsyncImage` para carga de imágenes remotas  
