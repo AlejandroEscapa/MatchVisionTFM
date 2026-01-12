@@ -1,20 +1,43 @@
 ⚽ MatchVision
-MatchVision es una plataforma integral para el seguimiento de fútbol profesional. La aplicación centraliza datos de ligas globales, permitiendo a los aficionados monitorizar equipos, jugadores y resultados en tiempo real con una interfaz dinámica y personalizada.
+Football Tracking & Statistics Ecosystem
+MatchVision es una solución integral para el seguimiento de fútbol profesional. La aplicación no solo consume datos en tiempo real, sino que gestiona un estado de usuario persistente y una interfaz altamente personalizable.
 
-📌 Características Principales
-Gestión de Usuarios: Sistema completo de autenticación (Registro/Login) con Firebase Auth y perfiles personalizados.
+🚀 Características Detalladas
+🔐 Autenticación y Seguridad
 
-Data en Tiempo Real: Consumo de API-Football para obtener estadísticas, clasificaciones y plantillas actualizadas.
+Flujo completo de Firebase Auth: Registro, login y recuperación de contraseña.
 
-Seguimiento de Partidos: Visualización de eventos en vivo, próximos encuentros y estados de partido (programado/en curso/finalizado).
+Gestión de perfiles: Almacenamiento de nombre, email y equipo favorito en Firestore.
 
-Personalización Dinámica: ThemeManager propio para alternar entre Dark/Light mode y estilos adaptativos en toda la UI.
+Persistencia de sesión: El usuario permanece logueado entre lanzamientos de la app.
 
-Persistencia Cloud: Sincronización de equipos favoritos y datos de usuario mediante Firebase Firestore.
+📊 Inteligencia de Datos (API-Football)
 
-🛠 Tecnologías y Arquitectura
-Stack: Swift 5.8+, SwiftUI, Firebase (Auth & Firestore).
+Dashboard de Equipos: Estadísticas detalladas, posición en liga, puntos y racha de resultados.
 
-Arquitectura: MVVM con flujos de datos reactivos (@StateObject, @Published).
+Squad Explorer: Plantilla completa con fichas individuales de jugadores.
 
-Componentes: AsyncImage para escudos/fotos, Pull-to-refresh nativo y animaciones de transición personalizadas.
+Análisis Comparativo: Gráficas visuales de goles a favor vs. goles en contra por partido.
+
+📅 Gestión de Encuentros
+
+Calendario dinámico con estados: Scheduled, In-Play, Finished.
+
+Actualización mediante Pull-to-refresh y logos cargados dinámicamente vía URL.
+
+🎨 UI/UX Dinámica
+
+ThemeManager: Sistema centralizado para cambiar el esquema de colores de toda la app (Dark/Light).
+
+Componentes custom: TabBar y NavigationBar que reaccionan al tema activo.
+
+Animaciones de entrada tipo Splash y Welcome con transiciones fluidas.
+
+🛠️ Stack Tecnológico
+Lenguaje: Swift 5.8+ (SwiftUI)
+
+Backend: Firebase Auth & Cloud Firestore
+
+Arquitectura: MVVM (ObservableObjects, StateObjects)
+
+Networking: URLSession con decodificación de JSON compleja.
