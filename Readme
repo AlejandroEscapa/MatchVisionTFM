@@ -1,47 +1,65 @@
 # ⚽ MatchVision
 
-MatchVision es una aplicación iOS desarrollada en *SwiftUI* para seguir equipos y jugadores de fútbol, consultar estadísticas, próximos partidos y gestionar favoritos.
+MatchVision es una aplicación iOS desarrollada como **proyecto de portfolio**, enfocada en seguir equipos y jugadores de fútbol, consultar estadísticas y próximos partidos, y gestionar favoritos.
 
 La app está completamente adaptada a un **ThemeManager dinámico**, utiliza **Firebase** para autenticación y almacenamiento de datos de usuario, y consume la **API-Football** para obtener información actualizada de ligas, partidos y jugadores.
 
 ---
 
-## 📌 Características principales
+## 📱 Descripción general
 
-### 🔐 Autenticación de usuario
+**MatchVision** centraliza información deportiva y permite al usuario:
+
+- Explorar equipos y jugadores
+- Consultar detalles estadísticos
+- Seguir próximos partidos y resultados en tiempo real
+- Gestionar favoritos sincronizados en la nube
+
+El proyecto prioriza:
+
+- Arquitectura escalable y mantenible
+- Experiencia de usuario fluida
+- Código limpio y modular
+- Buenas prácticas profesionales orientadas a entorno real
+
+---
+
+## 🚀 Características principales
+
+### 🔐 Autenticación y perfil
 - ✅ Registro y login con email y contraseña
 - ✅ Perfil de usuario con nombre, email y equipo favorito
-- ✅ Cierre de sesión seguro y persistencia de usuario
+- ✅ Cierre de sesión seguro y persistencia de sesión en Firebase
 
 ---
 
 ### ⚽ Equipos y jugadores
-- 📊 Detalles de equipos con estadísticas, posición en la liga y puntos
-- 👥 Plantilla completa de jugadores con navegación a su detalle individual
+- 📊 Detalle completo de equipos: estadísticas, posición en liga y puntos
+- 👥 Plantilla de jugadores con navegación a ficha individual
 - ⚡ Comparación de goles a favor y en contra por partido
-- ⭐ Sistema de favoritos por usuario con sincronización en Firestore
+- ⭐ Sistema de favoritos por usuario sincronizado en Firestore
 
 ---
 
 ### 📅 Próximos partidos
-- 📌 Visualización de próximos partidos de un equipo
-- ⏱ Estado del partido (programado, en curso, finalizado)
+- 📌 Visualización de próximos partidos por equipo
+- ⏱ Estado de partido (programado / en curso / finalizado)
 - 🔄 Resultados en tiempo real y pull-to-refresh
-- 🖼 Iconos y logos de equipos cargados dinámicamente desde URLs
+- 🖼 Logos e iconos cargados dinámicamente desde URLs con cache local
 
 ---
 
 ### 🎨 UI dinámica y temática
 - 🌙 Dark / Light Mode controlado por `ThemeManager`
-- 🔹 Componentes reutilizables con colores, fondos y animaciones adaptativas
+- 🔹 Componentes reutilizables y adaptativos
 - ✨ Splash View y Welcome View animadas con transición de logo
 - 🧭 TabBar y NavigationBar personalizadas según el tema activo
 
 ---
 
 ### 🌐 API y servicios
-- 🌐 Consumo de **API-Football** con autenticación mediante API Key
-- 📥 Fetch de ligas principales, equipos, jugadores y partidos
+- 🌍 Consumo de **API-Football** con autenticación mediante API Key
+- 📥 Fetch de ligas, equipos, jugadores y fixtures
 - ⚠️ Manejo de errores y estados de carga en tiempo real
 - 💾 Cache de imágenes y datos básicos para mejorar rendimiento
 
@@ -60,6 +78,7 @@ La app está completamente adaptada a un **ThemeManager dinámico**, utiliza **F
 - `AsyncImage` para carga de imágenes remotas
 - Pull-to-refresh con `ScrollView` y `LazyVStack`
 - Animaciones con `.transition`, `.spring` y `.easeIn`
+- Componentes reutilizables y testables
 
 ---
 
