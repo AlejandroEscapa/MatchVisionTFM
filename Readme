@@ -1,50 +1,20 @@
-MatchVision es una aplicación iOS desarrollada en SwiftUI para seguir equipos y jugadores de fútbol, consultar estadísticas, próximos partidos y gestionar favoritos.  
+⚽ MatchVision
+MatchVision es una plataforma integral para el seguimiento de fútbol profesional. La aplicación centraliza datos de ligas globales, permitiendo a los aficionados monitorizar equipos, jugadores y resultados en tiempo real con una interfaz dinámica y personalizada.
 
-La app está completamente adaptada a un ThemeManager dinámico, utiliza Firebase para autenticación y almacenamiento de datos de usuario, y consume la API-Football para obtener información actualizada de ligas, partidos y jugadores.
+📌 Características Principales
+Gestión de Usuarios: Sistema completo de autenticación (Registro/Login) con Firebase Auth y perfiles personalizados.
 
----
+Data en Tiempo Real: Consumo de API-Football para obtener estadísticas, clasificaciones y plantillas actualizadas.
 
-## 📌 Características principales
+Seguimiento de Partidos: Visualización de eventos en vivo, próximos encuentros y estados de partido (programado/en curso/finalizado).
 
-### 🔐 Autenticación de usuario
-- ✅ Registro y login con email y contraseña  
-- ✅ Perfil de usuario con nombre, email y equipo favorito  
-- ✅ Cierre de sesión seguro y persistencia de usuario  
+Personalización Dinámica: ThemeManager propio para alternar entre Dark/Light mode y estilos adaptativos en toda la UI.
 
-### ⚽ Equipos y jugadores
-- 📊 Detalles de equipos con estadísticas, posición en la liga y puntos  
-- 👥 Plantilla completa de jugadores con navegación a su detalle individual  
-- ⚡ Comparación de goles a favor y en contra por partido  
-- ⭐ Favoritos por usuario y sincronización en Firestore  
+Persistencia Cloud: Sincronización de equipos favoritos y datos de usuario mediante Firebase Firestore.
 
-### 📅 Próximos partidos
-- 📌 Visualización de próximos partidos de un equipo  
-- ⏱ Estado del partido (programado, en curso, finalizado)  
-- 🔄 Resultados en tiempo real y pull-to-refresh  
-- 🖼 Iconos y logos de equipos cargados dinámicamente desde URLs  
+🛠 Tecnologías y Arquitectura
+Stack: Swift 5.8+, SwiftUI, Firebase (Auth & Firestore).
 
-### 🎨 UI dinámica y temática
-- 🌙 Dark/Light mode controlado por `ThemeManager`  
-- 🔹 Componentes reutilizables con colores, fondos y animaciones adaptativas  
-- ✨ Splash y Welcome View animadas con transición de logo  
-- 🧭 TabBar y NavigationBar personalizados según el tema actual  
+Arquitectura: MVVM con flujos de datos reactivos (@StateObject, @Published).
 
-### 🌐 API y servicios
-- 🌐 Consumo de API-Football con autenticación mediante API Key  
-- 📥 Fetch de ligas principales, equipos, jugadores y partidos  
-- ⚠️ Manejo de errores y estados de carga en tiempo real  
-- 💾 Cache de imágenes y datos básicos para mejorar la experiencia  
-
----
-
-## 🛠 Tecnologías y librerías
-
-- Lenguaje: Swift 5.8+, SwiftUI  
-- Backend / Base de datos: Firebase Auth & Firestore  
-- API: [API-Football](https://www.api-football.com/)  
-- Arquitectura: MVVM (`StateObject`, `ObservableObject`)  
-- Almacenamiento local opcional: CoreData (`PersistenceController`)  
-- Componentes auxiliares:
-  - `AsyncImage` para carga de imágenes remotas  
-  - Pull-to-refresh con `ScrollView` y `LazyVStack`  
-  - Animaciones con `.transition`, `.spring` y `.easeIn`  
+Componentes: AsyncImage para escudos/fotos, Pull-to-refresh nativo y animaciones de transición personalizadas.
