@@ -49,7 +49,7 @@ El proyecto prioriza:
 
 ---
 
-### 🎨 UI dinámica y temática
+### 🎨 Interfaz y experiencia
 - 🌙 Dark / Light Mode controlado por `ThemeManager`
 - 🔹 Componentes reutilizables y adaptativos
 - ✨ Splash View y Welcome View animadas con transición de logo
