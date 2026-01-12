@@ -1,43 +1,73 @@
-⚽ MatchVision
-Football Tracking & Statistics Ecosystem
-MatchVision es una solución integral para el seguimiento de fútbol profesional. La aplicación no solo consume datos en tiempo real, sino que gestiona un estado de usuario persistente y una interfaz altamente personalizable.
+# ⚽ MatchVision
 
-🚀 Características Detalladas
-🔐 Autenticación y Seguridad
+MatchVision es una aplicación iOS desarrollada en *SwiftUI* para seguir equipos y jugadores de fútbol, consultar estadísticas, próximos partidos y gestionar favoritos.
 
-Flujo completo de Firebase Auth: Registro, login y recuperación de contraseña.
+La app está completamente adaptada a un **ThemeManager dinámico**, utiliza **Firebase** para autenticación y almacenamiento de datos de usuario, y consume la **API-Football** para obtener información actualizada de ligas, partidos y jugadores.
 
-Gestión de perfiles: Almacenamiento de nombre, email y equipo favorito en Firestore.
+---
 
-Persistencia de sesión: El usuario permanece logueado entre lanzamientos de la app.
+## 📌 Características principales
 
-📊 Inteligencia de Datos (API-Football)
+### 🔐 Autenticación de usuario
+- ✅ Registro y login con email y contraseña
+- ✅ Perfil de usuario con nombre, email y equipo favorito
+- ✅ Cierre de sesión seguro y persistencia de usuario
 
-Dashboard de Equipos: Estadísticas detalladas, posición en liga, puntos y racha de resultados.
+---
 
-Squad Explorer: Plantilla completa con fichas individuales de jugadores.
+### ⚽ Equipos y jugadores
+- 📊 Detalles de equipos con estadísticas, posición en la liga y puntos
+- 👥 Plantilla completa de jugadores con navegación a su detalle individual
+- ⚡ Comparación de goles a favor y en contra por partido
+- ⭐ Sistema de favoritos por usuario con sincronización en Firestore
 
-Análisis Comparativo: Gráficas visuales de goles a favor vs. goles en contra por partido.
+---
 
-📅 Gestión de Encuentros
+### 📅 Próximos partidos
+- 📌 Visualización de próximos partidos de un equipo
+- ⏱ Estado del partido (programado, en curso, finalizado)
+- 🔄 Resultados en tiempo real y pull-to-refresh
+- 🖼 Iconos y logos de equipos cargados dinámicamente desde URLs
 
-Calendario dinámico con estados: Scheduled, In-Play, Finished.
+---
 
-Actualización mediante Pull-to-refresh y logos cargados dinámicamente vía URL.
+### 🎨 UI dinámica y temática
+- 🌙 Dark / Light Mode controlado por `ThemeManager`
+- 🔹 Componentes reutilizables con colores, fondos y animaciones adaptativas
+- ✨ Splash View y Welcome View animadas con transición de logo
+- 🧭 TabBar y NavigationBar personalizadas según el tema activo
 
-🎨 UI/UX Dinámica
+---
 
-ThemeManager: Sistema centralizado para cambiar el esquema de colores de toda la app (Dark/Light).
+### 🌐 API y servicios
+- 🌐 Consumo de **API-Football** con autenticación mediante API Key
+- 📥 Fetch de ligas principales, equipos, jugadores y partidos
+- ⚠️ Manejo de errores y estados de carga en tiempo real
+- 💾 Cache de imágenes y datos básicos para mejorar rendimiento
 
-Componentes custom: TabBar y NavigationBar que reaccionan al tema activo.
+---
 
-Animaciones de entrada tipo Splash y Welcome con transiciones fluidas.
+## 🛠 Tecnologías y stack
 
-🛠️ Stack Tecnológico
-Lenguaje: Swift 5.8+ (SwiftUI)
+- **Lenguaje:** Swift 5.8+
+- **UI:** SwiftUI
+- **Arquitectura:** MVVM (`ObservableObject`, `StateObject`)
+- **Backend:** Firebase Auth & Firestore
+- **API externa:** API-Football
+- **Persistencia local (opcional):** CoreData (`PersistenceController`)
 
-Backend: Firebase Auth & Cloud Firestore
+### Componentes auxiliares
+- `AsyncImage` para carga de imágenes remotas
+- Pull-to-refresh con `ScrollView` y `LazyVStack`
+- Animaciones con `.transition`, `.spring` y `.easeIn`
 
-Arquitectura: MVVM (ObservableObjects, StateObjects)
+---
 
-Networking: URLSession con decodificación de JSON compleja.
+## 🎯 Enfoque profesional
+
+Proyecto diseñado como:
+
+1. **Pieza clave de portfolio**
+2. **Demostración de arquitectura limpia**
+3. **Base escalable para testing y evolución**
+4. **Referencia realista de app iOS moderna**
