@@ -1,6 +1,6 @@
 # ⚽ MatchVision
 
-MatchVision es una aplicación iOS desarrollada como **proyecto de portfolio**, enfocada en seguir equipos y jugadores de fútbol, consultar estadísticas y próximos partidos, y gestionar favoritos.
+**MatchVision** es una aplicación iOS desarrollada como **proyecto de portfolio**, enfocada en seguir equipos y jugadores de fútbol, consultar estadísticas y próximos partidos, y gestionar favoritos.
 
 La app está completamente adaptada a un **ThemeManager dinámico**, utiliza **Firebase** para autenticación y almacenamiento de datos de usuario, y consume la **API-Football** para obtener información actualizada de ligas, partidos y jugadores.
 
@@ -10,75 +10,81 @@ La app está completamente adaptada a un **ThemeManager dinámico**, utiliza **F
 
 **MatchVision** centraliza información deportiva y permite al usuario:
 
-- Explorar equipos y jugadores
-- Consultar detalles estadísticos
-- Seguir próximos partidos y resultados en tiempo real
-- Gestionar favoritos sincronizados en la nube
+- Explorar equipos y jugadores  
+- Consultar detalles estadísticos  
+- Seguir próximos partidos y resultados en tiempo real  
+- Gestionar favoritos sincronizados en la nube  
 
 El proyecto prioriza:
 
-- Arquitectura escalable y mantenible
-- Experiencia de usuario fluida
-- Código limpio y modular
-- Buenas prácticas profesionales orientadas a entorno real
+- Arquitectura escalable y mantenible  
+- Experiencia de usuario fluida  
+- Código limpio y modular  
+- Buenas prácticas profesionales orientadas a entorno real  
 
 ---
 
 ## 🚀 Características principales
 
 ### 🔐 Autenticación y perfil
-- ✅ Registro y login con email y contraseña
-- ✅ Perfil de usuario con nombre, email y equipo favorito
-- ✅ Cierre de sesión seguro y persistencia de sesión en Firebase
+
+- ✅ Registro y login con email y contraseña  
+- ✅ Perfil de usuario con nombre, email y equipo favorito  
+- ✅ Cierre de sesión seguro y persistencia de sesión en Firebase  
 
 ---
 
 ### ⚽ Equipos y jugadores
-- 📊 Detalle completo de equipos: estadísticas, posición en liga y puntos
-- 👥 Plantilla de jugadores con navegación a ficha individual
-- ⚡ Comparación de goles a favor y en contra por partido
-- ⭐ Sistema de favoritos por usuario sincronizado en Firestore
+
+- 📊 Detalle completo de equipos: estadísticas, posición en liga y puntos  
+- 👥 Plantilla de jugadores con navegación a ficha individual  
+- ⚡ Comparación de goles a favor y en contra por partido  
+- ⭐ Sistema de favoritos por usuario sincronizado en Firestore  
 
 ---
 
 ### 📅 Próximos partidos
-- 📌 Visualización de próximos partidos por equipo
-- ⏱ Estado de partido (programado / en curso / finalizado)
-- 🔄 Resultados en tiempo real y pull-to-refresh
-- 🖼 Logos e iconos cargados dinámicamente desde URLs con cache local
+
+- 📌 Visualización de próximos partidos por equipo  
+- ⏱ Estado de partido (programado / en curso / finalizado)  
+- 🔄 Resultados en tiempo real y pull-to-refresh  
+- 🖼 Logos e iconos cargados dinámicamente desde URLs con cache local  
 
 ---
 
 ### 🎨 Interfaz y experiencia
-- 🌙 Dark / Light Mode controlado por `ThemeManager`
-- 🔹 Componentes reutilizables y adaptativos
-- ✨ Splash View y Welcome View animadas con transición de logo
-- 🧭 TabBar y NavigationBar personalizadas según el tema activo
+
+- 🌙 Dark / Light Mode controlado por `ThemeManager`  
+- 🔹 Componentes reutilizables y adaptativos  
+- ✨ Splash View y Welcome View animadas con transición de logo  
+- 🧭 TabBar y NavigationBar personalizadas según el tema activo  
 
 ---
 
 ### 🌐 API y servicios
-- 🌍 Consumo de **API-Football** con autenticación mediante API Key
-- 📥 Fetch de ligas, equipos, jugadores y fixtures
-- ⚠️ Manejo de errores y estados de carga en tiempo real
-- 💾 Cache de imágenes y datos básicos para mejorar rendimiento
+
+- 🌍 Consumo de **API-Football** con autenticación mediante API Key  
+- 📥 Fetch de ligas, equipos, jugadores y fixtures  
+- ⚠️ Manejo de errores y estados de carga en tiempo real  
+- 💾 Cache de imágenes y datos básicos para mejorar rendimiento  
 
 ---
 
 ## 🛠 Tecnologías y stack
 
-- **Lenguaje:** Swift 5.8+
-- **UI:** SwiftUI
-- **Arquitectura:** MVVM (`ObservableObject`, `StateObject`)
-- **Backend:** Firebase Auth & Firestore
-- **API externa:** API-Football
-- **Persistencia local (opcional):** CoreData (`PersistenceController`)
+- **Lenguaje:** Swift 5.8+  
+- **UI:** SwiftUI  
+- **Arquitectura:** MVVM (`ObservableObject`, `StateObject`)  
+- **Backend:** Firebase Auth & Firestore  
+- **API externa:** API-Football  
+- **Persistencia local (opcional):** CoreData (`PersistenceController`)  
 
 ### Componentes auxiliares
-- `AsyncImage` para carga de imágenes remotas
-- Pull-to-refresh con `ScrollView` y `LazyVStack`
-- Animaciones con `.transition`, `.spring` y `.easeIn`
-- Componentes reutilizables y testables
+
+- `AsyncImage` para carga de imágenes remotas  
+- Pull-to-refresh con `ScrollView` y `LazyVStack`  
+- Animaciones con `.transition`, `.spring` y `.easeIn`  
+- Componentes reutilizables y testables  
 
 ---
 
@@ -86,7 +92,7 @@ El proyecto prioriza:
 
 Proyecto diseñado como:
 
-1. **Pieza clave de portfolio**
-2. **Demostración de arquitectura limpia**
-3. **Base escalable para testing y evolución**
+1. **Pieza clave de portfolio**  
+2. **Demostración de arquitectura limpia**  
+3. **Base escalable para testing y evolución**  
 4. **Referencia realista de app iOS moderna**
