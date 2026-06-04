@@ -1,90 +1,296 @@
-# ⚽ MatchVision
+# 🎮 GameVision
 
-MatchVision es una aplicación iOS desarrollada como **proyecto de portfolio**, enfocada en seguir equipos y jugadores de fútbol, consultar estadísticas y próximos partidos, y gestionar favoritos.
+<div align="center">
 
-La app está completamente adaptada a un **ThemeManager dinámico**, utiliza **Firebase** para autenticación y almacenamiento de datos de usuario, y consume la **API-Football** para obtener información actualizada de ligas, partidos y jugadores.
+# GameVision
 
----
+### Gaming Social Network & Discovery Platform for Android
 
-## 📱 Descripción general
+**A modern Android application focused on video game discovery, gaming news, social interaction and personalized game tracking.**
 
-**MatchVision** centraliza información deportiva y permite al usuario:
-
-- Explorar equipos y jugadores.
-- Consultar detalles estadísticos.
-- Seguir próximos partidos y resultados en tiempo real.
-- Gestionar favoritos sincronizados en la nube.
-
-El proyecto prioriza:
-
-- Arquitectura escalable y mantenible.
-- Experiencia de usuario fluida.
-- Código limpio y modular.
-- Buenas prácticas profesionales orientadas a entorno real.
+</div>
 
 ---
 
-## 🚀 Características principales
+## 📖 Overview
 
-### 🔐 Autenticación y perfil
+GameVision is a native Android application built using modern Android development practices. The platform combines video game discovery, real-time gaming news, social features, user profiles and personalized game management into a unified mobile experience.
 
-- ✅ Registro y login con email y contraseña.
-- ✅ Perfil de usuario con nombre, email y equipo favorito.
-- ✅ Cierre de sesión seguro y persistencia de sesión en Firebase.
-
-### ⚽ Equipos y jugadores
-
-- 📊 Detalle completo de equipos: estadísticas, posición en liga y puntos.
-- 👥 Plantilla de jugadores con navegación a ficha individual.
-- ⚡ Comparación de goles a favor y en contra por partido.
-- ⭐ Sistema de favoritos por usuario sincronizado en Firestore.
-
-### 📅 Próximos partidos
-
-- 📌 Visualización de próximos partidos por equipo.
-- ⏱ Estado de partido (programado / en curso / finalizado).
-- 🔄 Resultados en tiempo real y pull-to-refresh.
-- 🖼 Logos e iconos cargados dinámicamente desde URLs con cache local.
-
-### 🎨 Interfaz y experiencia
-
-- 🌙 Dark / Light Mode controlado por `ThemeManager`.
-- 🔹 Componentes reutilizables y adaptativos.
-- ✨ Splash View y Welcome View animadas con transición de logo.
-- 🧭 TabBar y NavigationBar personalizadas según el tema activo.
-
-### 🌐 API y servicios
-
-- 🌍 Consumo de **API-Football** con autenticación mediante API Key.
-- 📥 Fetch de ligas, equipos, jugadores y fixtures.
-- ⚠️ Manejo de errores y estados de carga en tiempo real.
-- 💾 Cache de imágenes y datos básicos para mejorar rendimiento.
+The project follows an MVVM architecture and leverages Jetpack Compose for a fully declarative UI experience.
 
 ---
 
-## 🛠 Tecnologías y stack
+## ✨ Key Features
 
-- **Lenguaje:** Swift 5.8+
-- **UI:** SwiftUI
-- **Arquitectura:** MVVM (`ObservableObject`, `StateObject`)
-- **Backend:** Firebase Auth & Firestore
-- **API externa:** API-Football
-- **Persistencia local (opcional):** CoreData (`PersistenceController`)
+### 🎮 Video Game Discovery
 
-### Componentes auxiliares
+- Search games through RAWG API integration
+- Detailed game information pages
+- Ratings, genres and platform support
+- Screenshot galleries and metadata
 
-- `AsyncImage` para carga de imágenes remotas.
-- Pull-to-refresh con `ScrollView` y `LazyVStack`.
-- Animaciones con `.transition`, `.spring` y `.easeIn`.
-- Componentes reutilizables y testables.
+### 📰 Gaming News
+
+- Real-time gaming news feed
+- News aggregation from external APIs
+- Dynamic content updates
+
+### 👥 Social Platform
+
+- Friend management system
+- Social interaction capabilities
+- User profile discovery
+
+### 👤 User Profiles
+
+- Editable profiles
+- Personal information management
+- Custom user descriptions
+- Country and username configuration
+
+### ❤️ Personal Library
+
+- Game history tracking
+- Favorite game management
+- Personalized collections
+
+### 🔐 Authentication
+
+- Firebase Authentication
+- Google Sign-In integration
+- Guest access mode
+
+### 🌙 User Experience
+
+- Dark / Light Theme support
+- Persistent settings via DataStore
+- Material Design 3 UI
+- Responsive Compose components
 
 ---
 
-## 🎯 Enfoque profesional
+## 🏗 Architecture
 
-Proyecto diseñado como:
+```text
+Presentation Layer
+│
+├── Jetpack Compose
+├── Material Design 3
+├── Navigation Compose
+│
+ViewModel Layer
+│
+├── UserViewModel
+├── SearchViewModel
+├── NewsViewModel
+├── ThemeViewModel
+├── GoogleViewModel
+└── DDBBViewModel
+│
+Data Layer
+│
+├── Retrofit
+├── Firebase Firestore
+├── Firebase Authentication
+├── Room Database
+├── DataStore
+└── External APIs
+```
 
-1. **Pieza clave de portfolio**
-2. **Demostración de arquitectura limpia**
-3. **Base escalable para testing y evolución**
-4. **Referencia realista de app iOS moderna**
+---
+
+## 🛠 Technology Stack
+
+| Category | Technology |
+| --- | --- |
+| Language | Kotlin |
+| UI Toolkit | Jetpack Compose |
+| Architecture | MVVM |
+| Navigation | Navigation Compose |
+| Authentication | Firebase Auth |
+| Login Providers | Google Sign-In |
+| Database | Room |
+| Cloud Database | Firebase Firestore |
+| Networking | Retrofit |
+| Storage | DataStore |
+| Dependency Injection | Hilt |
+| Async Programming | Kotlin Coroutines |
+| Design System | Material Design 3 |
+
+---
+
+## 📂 Project Structure
+
+```text
+app/
+├── datastore/
+├── retrofit/
+├── ui/
+│   ├── navigation/
+│   ├── theme/
+│   └── views/
+├── viewmodel/
+└── resources/
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Android Studio Hedgehog or newer
+- Android SDK 35
+- JDK 17+
+- Firebase Project
+- RAWG API Key
+- NewsAPI Key
+
+### Clone Repository
+
+```bash
+git clone <repository-url>
+cd GameVision
+```
+
+### Configure Firebase
+
+1. Create a Firebase project.
+2. Enable Authentication.
+3. Enable Firestore.
+4. Download `google-services.json`.
+5. Place the file inside:
+
+```text
+app/google-services.json
+```
+
+### Configure API Keys
+
+Store secrets securely and avoid committing them to Git.
+
+Recommended:
+
+```properties
+RAWG_API_KEY=your_key
+NEWS_API_KEY=your_key
+```
+
+### Build
+
+```bash
+./gradlew assembleDebug
+```
+
+---
+
+## 📱 Core Modules
+
+### Authentication Module
+
+Handles:
+
+- Firebase Login
+- Google Sign-In
+- Guest Sessions
+
+### News Module
+
+Handles:
+
+- Gaming news retrieval
+- News presentation
+- Feed management
+
+### Search Module
+
+Handles:
+
+- Game search
+- Game details
+- Metadata retrieval
+
+### Social Module
+
+Handles:
+
+- Friends
+- User discovery
+- Profile interactions
+
+---
+
+## 🔒 Security Recommendations
+
+Before publishing publicly:
+
+- Remove hardcoded API keys.
+- Move secrets to local properties or secret managers.
+- Rotate exposed credentials.
+- Use BuildConfig fields for sensitive values.
+- Exclude sensitive files from version control.
+
+---
+
+## 📈 Roadmap
+
+- [ ] Push Notifications
+- [ ] Real-Time Chat
+- [ ] Achievement System
+- [ ] Recommendation Engine
+- [ ] AI-Powered Assistant
+- [ ] Multi-language Support
+- [ ] Cloud Save Synchronization
+- [ ] Advanced Analytics
+
+---
+
+## 🧪 Testing
+
+```bash
+./gradlew test
+```
+
+```bash
+./gradlew connectedAndroidTest
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Open a Pull Request.
+
+---
+
+## 👨‍💻 Author
+
+**Alejandro Olivares Escapa**
+
+Android Developer • Software Engineer • Full Stack Developer
+
+---
+
+## ⭐ Project Vision
+
+GameVision aims to provide a modern gaming ecosystem where users can:
+
+- Discover new games
+- Follow industry news
+- Build gaming communities
+- Track personal gaming activity
+
+All through a modern Android-native experience powered by Kotlin and Jetpack Compose.
+
+---
+
+<div align="center">
+
+Built with ❤️ using Kotlin, Jetpack Compose and Firebase.
+
+</div>
