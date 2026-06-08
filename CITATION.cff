@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+title: "MatchVision: Football Tracking & Live Scores App for iOS"
+message: >-
+  If you use this software in your research, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Alejandro
+    family-names: Olivares Escapa
+    email: alejandro.escapa@example.com
+    affiliation: Universidad
+    orcid: ""  # Add your ORCID if you have one: https://orcid.org
+repository-code: "https://github.com/AlejandroEscapa/MatchVisionTFM"
+url: "https://github.com/AlejandroEscapa/MatchVisionTFM"
+abstract: >-
+  MatchVision is a native iOS application focused on football tracking —
+  live scores, league standings, team and player statistics, personalized
+  favorites, and sports news. Built with SwiftUI following MVVM architecture,
+  Firebase for authentication and cloud storage, and consuming API-Football
+  and NewsAPI for real-time sports data. Developed as part of a Master's
+  Thesis (TFM) to demonstrate proficiency in mobile application development,
+  software architecture, and modern iOS technologies including Swift, SwiftUI,
+  MVVM, and Firebase.
+keywords:
+  - ios
+  - swift
+  - swiftui
+  - football
+  - sports
+  - mobile-development
+  - firebase
+  - mvvm
+  - master-thesis
+  - tfm
+license: MIT
+version: 1.0.0
+date-released: "2025-06-08"
