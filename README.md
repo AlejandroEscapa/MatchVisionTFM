@@ -13,7 +13,7 @@
     <img src="https://img.shields.io/github/v/release/AlejandroEscapa/MatchVisionTFM?style=flat-square&color=blue" alt="Release">
   </a>
   <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: MIT">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: All Rights Reserved">
   </a>
   <a href="https://github.com/AlejandroEscapa/MatchVisionTFM/actions">
     <img src="https://img.shields.io/github/actions/workflow/status/AlejandroEscapa/MatchVisionTFM/ci.yml?style=flat-square" alt="CI">
