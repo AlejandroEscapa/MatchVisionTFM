@@ -2,7 +2,7 @@
 
 ### Gaming Social Network & Discovery Platform for Android
 
-> **Trabajo de Fin de Máster** · Universidad · Curso AÑO
+> **Trabajo de Fin de Máster** · Tokio School · Curso 2026
 >
 > *A modern Android application focused on video game discovery, gaming news, social interaction, and personalized game tracking.*
 
@@ -12,9 +12,7 @@
   <a href="https://github.com/AlejandroEscapa/MatchVisionTFM/releases">
     <img src="https://img.shields.io/github/v/release/AlejandroEscapa/MatchVisionTFM?style=flat-square&color=blue" alt="Release">
   </a>
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: All Rights Reserved">
-  </a>
+  <img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-red.svg?style=flat-square" alt="License: All Rights Reserved">
   <a href="https://github.com/AlejandroEscapa/MatchVisionTFM/actions">
     <img src="https://img.shields.io/github/actions/workflow/status/AlejandroEscapa/MatchVisionTFM/ci.yml?style=flat-square" alt="CI">
   </a>
