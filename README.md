@@ -2,7 +2,7 @@
 
 ### Football Tracking & Live Scores App for iOS
 
-> **Trabajo de Fin de Máster** · Universidad · Curso 2024-2025
+> **Trabajo de Fin de Máster** · Tokio School · Curso 2026
 >
 > *A native iOS application focused on football tracking — live scores, league standings, team and player statistics, personalized favorites, and sports news.*
 
@@ -35,7 +35,6 @@
 - [Core Modules](#-core-modules)
 - [Security](#-security)
 - [Testing](#-testing)
-- [Roadmap](#-roadmap)
 - [Contributing](#-contributing)
 - [Citing This Work](#-citing-this-work)
 - [Support](#-support)
@@ -60,8 +59,6 @@ The project follows an **MVVM architecture** approach, leveraging **Firebase** f
 | Home | Match Details | Standings | Profile |
 |------|---------------|-----------|---------|
 | *[Screenshot]* | *[Screenshot]* | *[Screenshot]* | *[Screenshot]* |
-
-> ⚠️ **Replace with actual screenshots**: Take screenshots at 1284×2778 resolution (iPhone 14 Pro Max) and place them in `docs/screenshots/`. Update using `![Home](docs/screenshots/home.png)` syntax.
 
 ---
 
@@ -115,22 +112,22 @@ The project follows an **MVVM architecture** approach, leveraging **Firebase** f
 MatchVision follows **MVVM** (Model-View-ViewModel) architecture:
 
 ```text
-┌─────────────────────────────────────────────┐
+┌─────────────────────────────────────────────-┐
 │              PRESENTATION LAYER              │
-│  ┌──────────────┐  ┌──────────────────────┐ │
-│  │  SwiftUI Views│  │  NavigationStack/TabView│ │
-│  └──────┬───────┘  └──────────┬───────────┘ │
+│  ┌──────────────┐  ┌──────────────────────-┐ │
+│  │ SwiftUI Views│  │NavigationStack/TabView│ │
+│  └──────┬───────┘  └──────────┬───────────-┘ │
 │         │                     │              │
-│  ┌──────▼─────────────────────▼───────────┐ │
+│  ┌──────▼─────────────────────▼───────────-┐ │
 │  │              ViewModels                 │ │
 │  │  HomeVM · MatchsVM · PlayersVM          │ │
 │  │  LeagueStandingsVM · ProfileVM          │ │
-│  │  AuthVM · ThemeManager                   │ │
+│  │  AuthVM · ThemeManager                  │ │
 │  └──────────────────┬──────────────────────┘ │
 └─────────────────────┼────────────────────────┘
                       │
 ┌─────────────────────▼────────────────────────┐
-│                 DATA LAYER                    │
+│                 DATA LAYER                   │
 │  ┌──────────────┐  ┌──────────────────────┐  │
 │  │  APIService  │  │    APINews           │  │
 │  │  (URLSession)│  │  (URLSession)        │  │
@@ -340,29 +337,6 @@ xcodebuild test -project MatchVision.xcodeproj -scheme MatchVision
 | Unit | XCTest | ViewModels, Models |
 | UI | SwiftUI Previews | View rendering |
 | Integration | Firebase Emulator | Firestore reads/writes |
-
----
-
-## 📈 Roadmap
-
-### v1.1 (Short-term)
-- [ ] Push Notifications (Firebase Messaging)
-- [ ] Offline mode with CoreData caching
-- [ ] Accessibility (VoiceOver, Dynamic Type)
-- [ ] Widgets for home screen
-
-### v1.2 (Mid-term)
-- [ ] Real-Time Match Updates (WebSocket)
-- [ ] Match Predictions with AI
-- [ ] Multi-language (ES/EN/FR/DE)
-- [ ] UI test coverage > 60%
-
-### v2.0 (Long-term)
-- [ ] Recommendation Engine
-- [ ] Social Features (share predictions)
-- [ ] Cloud Save Sync
-- [ ] watchOS companion
-- [ ] Android version (GameVision)
 
 ---
 
