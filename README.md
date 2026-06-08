@@ -272,7 +272,7 @@ Contributions are welcome.
 
 **Alejandro Olivares Escapa**
 
-Android Developer • Software Engineer • Full Stack Developer
+Software Engineer • Frontend and Mobile Developer
 
 ---
 
