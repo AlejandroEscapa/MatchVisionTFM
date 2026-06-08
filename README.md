@@ -356,15 +356,15 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidel
 ## 📚 Citing This Work
 
 ### APA 7th Edition
-> Olivares Escapa, A. (2025). *MatchVision: Football Tracking & Live Scores App for iOS* [Master's Thesis, Universidad]. GitHub. https://github.com/AlejandroEscapa/MatchVisionTFM
+> Olivares Escapa, A. (2025). *MatchVision: Football Tracking & Live Scores App for iOS* [Master's Thesis, Tokio School]. GitHub. https://github.com/AlejandroEscapa/MatchVisionTFM
 
 ### BibTeX
 ```bibtex
 @mastersthesis{olivares_matchvision,
   author  = {Alejandro Olivares Escapa},
   title   = {{MatchVision}: Football Tracking \& Live Scores App for iOS},
-  school  = {Universidad},
-  year    = {2025},
+  school  = {Tokio School},
+  year    = {2026},
   type    = {Master's Thesis (TFM)},
   url     = {https://github.com/AlejandroEscapa/MatchVisionTFM}
 }
