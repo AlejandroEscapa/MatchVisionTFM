@@ -1,14 +1,9 @@
-# 🎮 GameVision
-
-<div align="center">
 
 # GameVision
 
 ### Gaming Social Network & Discovery Platform for Android
 
 **A modern Android application focused on video game discovery, gaming news, social interaction and personalized game tracking.**
-
-</div>
 
 ---
 
