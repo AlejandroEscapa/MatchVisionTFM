@@ -35,9 +35,7 @@
 - [Core Modules](#-core-modules)
 - [Security](#-security)
 - [Testing](#-testing)
-- [Contributing](#-contributing)
 - [Citing This Work](#-citing-this-work)
-- [Support](#-support)
 - [Author](#-author)
 - [License](#-license)
 - [Project Vision](#-project-vision)
@@ -308,17 +306,6 @@ private let apiKey = Bundle.main.object(forInfoDictionaryKey: "API_FOOTBALL_KEY"
 - API keys stored in code (update before publishing)
 - No sensitive data in logs
 
-### 🔴 Before Publishing Publicly
-- [ ] Move API keys to secure storage (Keychain)
-- [ ] Implement Firestore Security Rules (deny by default)
-- [ ] Add Firebase App Check
-- [ ] Enable iOS App Transport Security
-- [ ] Use Encrypted UserDefaults for sensitive preferences
-- [ ] Enable ProGuard/R8 obfuscation (if using Objective-C)
-- [ ] Run OWASP dependency check
-
-> **Report vulnerabilities**: See [SECURITY.md](SECURITY.md)
-
 ---
 
 ## 🧪 Testing
@@ -340,19 +327,6 @@ xcodebuild test -project MatchVision.xcodeproj -scheme MatchVision
 
 ---
 
-## 🤝 Contributing
-
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
-
-### Quick Start
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit using [Conventional Commits](https://www.conventionalcommits.org/)
-4. Push: `git push origin feature/amazing-feature`
-5. Open a Pull Request against `main`
-
----
-
 ## 📚 Citing This Work
 
 ### APA 7th Edition
@@ -371,13 +345,6 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidel
 ```
 
 > See [CITATION.cff](CITATION.cff) for machine-readable metadata.
-
----
-
-## 🆘 Support
-
-- **Bugs & Features**: [GitHub Issues](https://github.com/AlejandroEscapa/MatchVisionTFM/issues)
-- **Security issues**: See [SECURITY.md](SECURITY.md) for private reporting
 
 ---
 
