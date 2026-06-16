@@ -19,7 +19,7 @@ Only the latest released version receives security updates.
 Please report vulnerabilities privately via:
 
 1. **GitHub Security Advisories**: Go to [Security → Advisories → Report a vulnerability](https://github.com/AlejandroEscapa/MatchVisionTFM/security/advisories/new)
-2. **Email**: alejandro.escapa@example.com *(encrypted with PGP if sensitive)*
+2. **Email**: alejandro.oliesc97@gmail.com *(encrypted with PGP if sensitive)*
 
 ### What to Include
 

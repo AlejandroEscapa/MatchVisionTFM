@@ -389,7 +389,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidel
   <a href="https://github.com/AlejandroEscapa">
     <img src="https://img.shields.io/badge/GitHub-000?style=flat-square&logo=github" alt="GitHub">
   </a>
-  <a href="https://linkedin.com/in/alejandroescapa">
+  <a href="https://linkedin.com/in/alejandro-olivares-escapa">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn">
   </a>
 </p>
@@ -414,7 +414,7 @@ You may NOT:
 - Use it in whole or part for commercial or personal projects
 - Claim authorship
 
-For licensing inquiries: alejandro.escapa@example.com
+For licensing inquiries: alejandro.oliesc97@gmail.com
 
 ---
 
