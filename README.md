@@ -9,13 +9,7 @@
 ---
 
 <p align="center">
-  <a href="https://github.com/AlejandroEscapa/MatchVisionTFM/releases">
-    <img src="https://img.shields.io/github/v/release/AlejandroEscapa/MatchVisionTFM?style=flat-square&color=blue" alt="Release">
-  </a>
   <img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-red.svg?style=flat-square" alt="License: All Rights Reserved">
-  <a href="https://github.com/AlejandroEscapa/MatchVisionTFM/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/AlejandroEscapa/MatchVisionTFM/ci.yml?style=flat-square" alt="CI">
-  </a>
   <img src="https://img.shields.io/badge/Swift-5.0-FA7343?style=flat-square&logo=swift" alt="Swift">
   <img src="https://img.shields.io/badge/SwiftUI-Ready-4FC3F7?style=flat-square&logo=swift" alt="SwiftUI">
   <img src="https://img.shields.io/badge/iOS-18.6-green?style=flat-square" alt="iOS">
